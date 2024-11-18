@@ -61,13 +61,13 @@ public class BodyWeightCalculator {
     }
 
     private static double berthan(int height, int age) {
-        double berthan = 0;
+        double berthan;
         berthan = 0.8 * (height - 100) + age / 2.0;
         return round(berthan);
     }
 
     private static double getLorentzRound(int gender, int height, int age) {
-        double lorentz = 0;
+        double lorentz;
         if (gender == 1) {
             lorentz = height - 100 - (height - 150.0) / 4 + (age - 20.0) / 4;
         } else {
